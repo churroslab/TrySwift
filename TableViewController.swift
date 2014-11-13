@@ -11,10 +11,11 @@ import UIKit
 class TableViewController: UITableViewController {
     
     // private vs public . var (dynamic i.e. mutable) vs let (static)
-    private let cities = ["Montreal", "New York", "Paris", "London", "San Francisco", "Moscow", "Shanghai"]
+    private var cities = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.buildCities()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -46,7 +47,9 @@ class TableViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("prototypeCell", forIndexPath: indexPath) as UITableViewCell
 
-        cell.textLabel.text = self.cities[indexPath.row]
+        let cityForCell = self.cities[indexPath.row] as City
+        cell.textLabel.text = cityForCell.name
+        cell.detailTextLabel?.text = cityForCell.country
 
         return cell
     }
@@ -60,5 +63,16 @@ class TableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    func buildCities() {
+        let montreal = City(name:"Montreal", country:"Canada")
+        let newYork = City(name:"New York", country:"United States")
+        let paris = City(name:"Paris", country:"France")
+        let london = City(name:"London", country:"United Kingdom")
+        let sanFran = City(name: "San Francisco", country: "United States")
+        let moscow = City(name: "Moscow", country: "Russia")
+        let shanghai = City(name: "Shanghai", country: "China")
+        self.cities = [montreal, newYork, paris, london, sanFran, moscow, shanghai]
+    }
 
 }

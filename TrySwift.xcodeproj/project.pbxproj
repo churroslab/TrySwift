@@ -13,6 +13,7 @@
 		CB1CA18D1A14455200B6FDD0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB1CA18B1A14455200B6FDD0 /* LaunchScreen.xib */; };
 		CB1CA1991A14455200B6FDD0 /* TrySwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1CA1981A14455200B6FDD0 /* TrySwiftTests.swift */; };
 		CB1CA1A31A14471600B6FDD0 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1CA1A21A14471600B6FDD0 /* TableViewController.swift */; };
+		CB1CA1A51A144F0800B6FDD0 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1CA1A41A144F0800B6FDD0 /* City.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		CB1CA1971A14455200B6FDD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB1CA1981A14455200B6FDD0 /* TrySwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrySwiftTests.swift; sourceTree = "<group>"; };
 		CB1CA1A21A14471600B6FDD0 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewController.swift; path = ../TableViewController.swift; sourceTree = "<group>"; };
+		CB1CA1A41A144F0800B6FDD0 /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				CB1CA1821A14455200B6FDD0 /* AppDelegate.swift */,
 				CB1CA1A21A14471600B6FDD0 /* TableViewController.swift */,
 				CB1CA1861A14455200B6FDD0 /* Main.storyboard */,
+				CB1CA1A41A144F0800B6FDD0 /* City.swift */,
 				CB1CA1891A14455200B6FDD0 /* Images.xcassets */,
 				CB1CA18B1A14455200B6FDD0 /* LaunchScreen.xib */,
 				CB1CA1801A14455200B6FDD0 /* Supporting Files */,
@@ -214,6 +217,7 @@
 			files = (
 				CB1CA1831A14455200B6FDD0 /* AppDelegate.swift in Sources */,
 				CB1CA1A31A14471600B6FDD0 /* TableViewController.swift in Sources */,
+				CB1CA1A51A144F0800B6FDD0 /* City.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
